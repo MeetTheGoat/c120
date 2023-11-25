@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>Mobilenet vs Google lens</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="background.jpg"> 
+<center>
+  <h3 class="btn btn-success heading">Mobilenet vs Google lens
+   <hr>
+    <center>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+        We are using Mobilenet as a Model  
+        <br>
+          <div class="btn heading_div2">
+          This is an battle between Mobilenet and Google lens
+          </div>
+        </div>
+    </center>
+    <br>
+  </h3>
+  <br><br>
+  <img id="https://1.bp.blogspot.com/-ORFCz98IWUE/Xq0rIQOJicI/AAAAAAAABZc/rfSX7VfkoAIqYMRVr-M_ErY0dIoBwQDxQCLcBGAsYHQ/s1600/vengeance_5185_specs.png"
+  <img id="https://r.search.yahoo.com/cbclk2/dWU9RkRENUQ5QjAwMTA3NDkzNyZ1dD0xNzAwODc3NTIzODc0JnVvPTc5OTg5NTMxOTQzMjU1NyZsdD0yJnM9MSZlcz1ONE85T0Q4R1BTOHFzZGh5bzVaUHNNQnhYeXFkamUzWWdlekRYOE91S19jYUJ4NC0-/RV=2/RE=1703469524/RO=14/RU=https%3a%2f%2fwww.bing.com%2faclick%3fld%3de8u3G6KXPoD1MDOD8C-sGe-DVUCUzVvOJHpy6_1fZUuA3F4EZJ2M7wht6F2ukNrVGKJPBPm3eAjIRhg5ul92T08tEu2ZJe-r6Up-elX8eF0eEdEcAQhIZrQ7SUVA3e4LCST4Sjj6Q-abvtmntRKSH9byrPS4GuE3hCUNgtEvBbQZ4oePQW1MfK7sRjUfTJzi0SzjZPig%26u%3daHR0cHMlM2ElMmYlMmZjbGlja3NlcnZlLmRhcnRzZWFyY2gubmV0JTJmbGluayUyZmNsaWNrJTNmbGlkJTNkOTI3MDAwNDAxMDM0ODM5MjMlMjZkc19zX2t3Z2lkJTNkNTg3MDAwMDQ3Mjk0MjQ3MjElMjZkc19zX2ludmVudG9yeV9mZWVkX2lkJTNkOTc3MDAwMDAwMDIxNzQ0MzIlMjZkc19hX2NpZCUzZDQwNTQ5OTA5NSUyNmRzX2FfY2FpZCUzZDkyMzk5OTUxNzYlMjZkc19hX2FnaWQlM2Q5NTE0NjMwMjk1MyUyNmRzX2FfbGlkJTNkcGxhLTg3MTY1OTQxNzU3OCUyNiUyNmRzX2VfYWRpZCUzZDc5OTg5NTMxOTQzMjU1JTI2ZHNfZV90YXJnZXRfaWQlM2RwbGEtNDU4MzU4OTEwMzU4ODI1MCUyNmRzX2VfcHJvZHVjdF9ncm91cF9pZCUzZDQ1ODM1ODkxMDM1ODgyNTAlMjZkc19lX3Byb2R1Y3RfaWQlM2QyMzkyNjQ0JTI2ZHNfZV9wcm9kdWN0X2NvdW50cnklM2RVUyUyNmRzX2VfcHJvZHVjdF9sYW5ndWFnZSUzZGVuJTI2ZHNfZV9wcm9kdWN0X2NoYW5uZWwlM2RPbmxpbmUlMjZkc19lX25ldHdvcmslM2RvJTI2ZHNfdXJsX3YlM2QyJTI2ZHNfZGVzdF91cmwlM2RodHRwcyUzYSUyZiUyZnd3dy52YWx1ZWNpdHlmdXJuaXR1cmUuY29tJTJmcHJvZHVjdCUyZmdyb3VwJTJmbGl2aW5nLXJvb20lMmZzZWF0aW5nJTJmc2VjdGlvbmFscyUyZm1pbG8tMy1waWVjZS1zbGVlcGVyLXNlY3Rpb25hbC13aXRoLWxlZnQtZmFjaW5nLWxvdmVzZWF0LWxpZ2h0LWdyYXklMmYyNDE4MTgwJTJmMjM5MjY0NCUzZiUyNiUyNiUyNiUyNmdjbGlkJTNkMWIxYzAwZDU2YjYyMWFiOGE5MGE2NWI0M2ZiNjgwNDMlMjZnY2xzcmMlM2QzcC5kcyUyNm1zY2xraWQlM2QxYjFjMDBkNTZiNjIxYWI4YTkwYTY1YjQzZmI2ODA0MyUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZDI0X0FPX1ZDRl9DSElfR0ZfRkVEX1NIT1BfRkVEX0ZFRF9RQSUyNnV0bV90ZXJtJTNkNDU4MzU4OTEwMzU4ODI1MCUyNnV0bV9jb250ZW50JTNkTGl2aW5nJTI1MjBSb29tJTI1MjBGdXJuaXR1cmU%26rlid%3d1b1c00d56b621ab8a90a65b43fb68043/RK=2/RS=TqdKaZNWK2GT9XCgeNfKqLdwfCk-;_ylt=AwriiEjTVGFlbfsIHyQ2nIlQ;_ylu=cG9zAzcEc2VjA292LXRvcC1wbGE-;_ylc=cnQDMA--?p=couch+image">
+  <img id="https://images.search.yahoo.com/yhs/view;_ylt=AwrFcukWVWFlJfAI9FE2nIlQ;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzQzYjA2Y2Q3ZTg5NmM2Nzc4MDgwODA4NWFiZWQxZDcyBGdwb3MDMTUEaXQDYmluZw--?back=https%3A%2F%2Fimages.search.yahoo.com%2Fyhs%2Fsearch%3Fp%3Dbed%26ei%3DUTF-8%26type%3DBIZM_3013210001_%252458020_000000%2524%26fr%3Dyhs-Lkry-SF3%26fr2%3Dp%253As%252Cv%253Ai%252Cm%253Asb-top%26hsimp%3Dyhs-SF3%26hspart%3DLkry%26param1%3Dna3P9yVrJGqvPvD_Dpl5mR8n6AOsxDf7kSC_u_Yi3kHpghAAUQzGNdwNmuBndG4WyMt2wLvrUaBuvpownnnNFVGKn7OLAka3uS0FDQgaUZYx7lsBV66jmao3sCNL7MSnCYY7cmcXCJ8T2--KELmTPBk0V4BwjJantnI57OkCgdagN9LUnNCCn2om5_i49qIlC7tqmwKzJn5OFAC3RgZ9yZV1JnAYgNauXpWjamheErG7byhMfgM424dnd4y1tO4W-W9TEPQplMoTdA0cg9ZuA3t8gpnAnWgmKyo-cCwu2wLAg4SAdkwBtS_VyybuSTUQimds%26tab%3Dorganic%26ri%3D15&w=2000&h=2000&imgurl=i5.walmartimages.com%2Fasr%2F2cd59aef-6455-4cfb-8873-6bba431a9a68_2.841d20bfb5aeda86c712674e8fb93e10.jpeg&rurl=https%3A%2F%2Fwww.walmart.com%2Fip%2FHeavy-Frame-Platform-Support-Leather-Black-Slat-Required-Duty-Clearance-Frame-I7731-Faux-Bed-Wood-Queen-Upholstered-Box-Headboard-Spring-Teens-Adults%2F854878046&size=512.1KB&p=bed&oid=43b06cd7e896c67780808085abed1d72&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&fr=yhs-Lkry-SF3&tt=Clearance%21+King+Platform+Bed+Frame%2C+URHOMEPRO+Modern+Upholstered+...&b=0&ni=160&no=15&ts=&tab=organic&sigr=Me3B1masnheu&sigb=URD6VpohZlRT&sigi=fDVJgb1Z2IjH&sigt=k4JJm8c2EZ9S&.crumb=n7lPLv.3CZ1&fr=yhs-Lkry-SF3&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&hsimp=yhs-SF3&hspart=Lkry&type=BIZM_3013210001_%2458020_000000%24&param1=na3P9yVrJGqvPvD_Dpl5mR8n6AOsxDf7kSC_u_Yi3kHpghAAUQzGNdwNmuBndG4WyMt2wLvrUaBuvpownnnNFVGKn7OLAka3uS0FDQgaUZYx7lsBV66jmao3sCNL7MSnCYY7cmcXCJ8T2--KELmTPBk0V4BwjJantnI57OkCgdagN9LUnNCCn2om5_i49qIlC7tqmwKzJn5OFAC3RgZ9yZV1JnAYgNauXpWjamheErG7byhMfgM424dnd4y1tO4W-W9TEPQplMoTdA0cg9ZuA3t8gpnAnWgmKyo-cCwu2wLAg4SAdkwBtS_VyybuSTUQimds"
+  
+  
+  
+  <p class="btn btn-danger result_para_tag">Object : 
+    <span id="result_object_name"></span> 
+  </p>
+  
+  <br><br>
+  <p class="btn btn-danger result_para_tag">Accuracy : 
+    <span id="result_object_accuracy"></span> 
+  </p>
+
+</center>
+
+<div class="copy_right_footer">
+  Develpoed by - meet patel
+</div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
+
